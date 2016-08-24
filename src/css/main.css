@@ -6959,8 +6959,34 @@ a.text-danger:focus, a.text-danger:hover {
   padding-bottom: 2rem;
 }
 
-.alert {
+#myForm .company-form, #myForm .client-from {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#myForm .form-inline, #myForm .map-form {
+  margin-bottom: 5px;
+}
+
+#myForm .radio-box {
+  padding-top: 6px;
+}
+
+#myForm .radio-box .radio-inline {
+  padding-right: 10px;
+}
+
+#myForm .radio-box .radio-inline input {
+  margin-right: 5px;
+}
+
+#myForm small {
+  padding-left: 20px;
+}
+
+.main {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .head {

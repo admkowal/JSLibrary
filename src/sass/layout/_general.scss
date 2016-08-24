@@ -4,6 +4,8 @@
 
     // *--------- METRICS ---------*
 
+    $margin-main: 2rem;
+
     // *--------- TYPOGRAPHY ---------*
 
     // *--------- COLORS ---------*
@@ -11,3 +13,8 @@
 // ----------------------------
 //     GENERAL STYLES
 // ----------------------------
+
+.main {
+	margin-top: $margin-main;
+	margin-bottom: $margin-main;
+}

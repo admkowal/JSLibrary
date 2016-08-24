@@ -118,12 +118,15 @@
 //     // *--------- MAP ---------*
     @import "components/geo-mapfrom";
 
+//     // *--------- MAP ---------*
+    @import "components/webstorage-form";
+
 // ---------------------
 //     LAYOUT
 // ---------------------
 
 //     *--------- GENERAL ---------*
-//     @import "layout/general";
+    @import "layout/general";
 
 //     *--------- HEADER ---------*
     @import "layout/header";
