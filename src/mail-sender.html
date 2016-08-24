@@ -19,6 +19,7 @@
                 <ul class="submenu__list">
                     <li><a href="geo-mapfrom.html">Geolocation mapFrom</a></li>
                     <li><a href="webstorage-form.html">WebStorage Form</a></li>
+                    <li><a href="mail-sender.html">Mail Sender</a></li>
                 </ul>
             </div>
 
@@ -38,14 +39,45 @@
         </div>
     </div>
 
-    <header class="head mainpage">
+    <header class="head">
         <div class="container">
-            <h1 class="head__headline">Welcome in JS Library.</h1>
-            <p>Here you can find collection of apps built by Adam Kowal. If you found it interesting or want to help me to improve it - send me a messege!</p>
+            <h1 class="head__headline">Mail_Sender</h1>
+            <p>Form made with my AJAX library.</p>
 
-            <div class="github-widget" data-repo="admkowal/Start_Kit"></div>
+            <div class="github-widget" data-repo="admkowal/Mail_Sender"></div>
         </div>
     </header>
+
+    <main class="container mapsender main">
+      
+        <div class="row hidden-xs-up">
+            <div id="displayInfo" class="alert col-xs-6 col-xs-offset-3" role="alert"></div>
+        </div>
+
+        <form id="form" action="mail.php" method="POST">
+            <h4 class="text-center">Mail Sender (AJAX + PHP)</h4>
+    
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <input type="text" class="form-control" name="your-name" placeholder="Name">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <input type="email" class="form-control" name="your-email" placeholder="Email">
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <textarea type="text" class="form-control" name="your-message" rows="3" placeholder="Message"></textarea>
+                </div>
+            </div>
+    
+            <button type="submit" class="btn btn-primary center-block" name="btnSubmit">Submit</button>
+        </form>
+    </main>
 
     <footer class="footer">
         <div>
@@ -61,7 +93,8 @@
     <script type="text/javascript" src="js/lib/jquery.githubRepoWidget.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="js/scripts.min.js"></script>
+    <script src="js/lib/ajax.js"></script>
+    <script src="js/lib/map-sender.js"></script>
 
 </body>
 </html>
