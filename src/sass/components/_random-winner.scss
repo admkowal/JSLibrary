@@ -1,0 +1,63 @@
+// -------------------------------
+//     FORMS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+    $light-blue: #A4D5FF;
+    $white: #FFFFFF;
+
+// -------------------------------
+//     FORMS STYLES
+// -------------------------------
+.get-winner {
+	@extend .container;
+
+  	&__btn {
+  		@extend .btn, .btn-success;
+
+        margin-left: 4px;
+  	}
+
+  	&__output { 
+  		@extend .btn, .col-xs-2;
+  		cursor: default;
+  		background: $light-blue;
+  	}
+
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+} 
+
+.formblock {
+    @extend .form-inline;
+    
+    margin-bottom: 2rem;
+
+    &__input {
+        @extend .form-control;
+    }
+
+}
+
+.contestants {
+    margin-top: 3rem;
+
+    ul {
+        @extend .list-group;
+
+        li {
+            @extend .list-group-item;
+
+        }
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+}

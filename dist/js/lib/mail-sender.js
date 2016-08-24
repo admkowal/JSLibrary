@@ -5,7 +5,7 @@
 
 	function displayInfo(style, info) {
 
-        infoAlert.classList.remove("hidden-xs-up");
+    infoAlert.classList.remove("hidden-xs-up");
 		infoAlert.classList.add(style);
 		infoAlert.innerHTML = info;
 

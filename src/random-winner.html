@@ -42,42 +42,34 @@
 
     <header class="head">
         <div class="container">
-            <h1 class="head__headline">Mail_Sender</h1>
-            <p>Form made with my AJAX library.</p>
+            <h1 class="head__headline">Random_Winner</h1>
+            <p>Find random winner from group of contestants. You can use it when you organize facebook contest.</p>
 
-            <div class="github-widget" data-repo="admkowal/Mail_Sender"></div>
+            <div class="github-widget" data-repo="admkowal/Random_Winner"></div>
         </div>
     </header>
 
-    <main class="container mapsender main">
-      
-        <div class="row hidden-xs-up">
-            <div id="displayInfo" class="alert col-xs-6 col-xs-offset-3" role="alert"></div>
+    <main class="get-winner main">
+        <div class="alert hidden-xs-up" role="alert" id="alert"></div>
+        
+        <form class="formblock">
+            <div class="form-group">
+                <input type="text" class="formblock__input" id="addContestant" placeholder="Enter contestant" data-error="Enter a valid contestant">
+            </div>
+
+            <button id="addBtn" type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+        <div class="row">
+            <button type="button" id="getRandom" class="get-winner__btn">Generate!</button>
+            <output id="showRandom" class="get-winner__output">The winner is...</output>
         </div>
 
-        <form id="form" action="mail.php" method="POST">
-            <h4 class="text-center">Mail Sender (AJAX + PHP)</h4>
-    
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <input type="text" class="form-control" name="your-name" placeholder="Name">
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <input type="email" class="form-control" name="your-email" placeholder="Email">
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <textarea type="text" class="form-control" name="your-message" rows="3" placeholder="Message"></textarea>
-                </div>
-            </div>
-    
-            <button type="submit" class="btn btn-primary center-block" name="btnSubmit">Submit</button>
-        </form>
+        <div id="contestants" class="contestants hidden-xs-up">
+            <h4>Contestants</h4>
+            <ul>
+            </ul>
+        </div>
     </main>
 
     <footer class="footer">
@@ -94,8 +86,8 @@
     <script type="text/javascript" src="js/lib/jquery.githubRepoWidget.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="js/lib/ajax.js"></script>
-    <script src="js/lib/mail-sender.js"></script>
+
+    <script src="js/lib/random-winner.min.js"></script>
 
 </body>
 </html>
