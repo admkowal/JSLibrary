@@ -1,0 +1,40 @@
+// -------------------------------
+//     NAV VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// ----------------------------
+//     NAV STYLES
+// ----------------------------
+
+.map-wrapper {
+	@extend .container;
+}
+
+#map {
+	height: 20rem;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+
+.map-form {
+	@extend .form-inline;
+
+	padding-bottom: 2rem;
+
+	&__address {
+		@extend .form-group;
+	}
+
+	&__output {
+		@extend .form-control;
+	}
+}
+
+.alert {
+	margin-top: 2rem;
+}
