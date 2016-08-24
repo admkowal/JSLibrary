@@ -7084,6 +7084,35 @@ a.text-danger:focus, a.text-danger:hover {
   margin-bottom: 1rem;
 }
 
+th:hover {
+  cursor: pointer;
+}
+
+table th {
+  position: relative;
+}
+
+table th:after {
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+table th.asc:after {
+  content: "\25B2";
+  display: block;
+  top: 8px;
+  right: 20px;
+}
+
+table th.desc:after {
+  content: "\25BC";
+  display: block;
+  top: 8px;
+  right: 20px;
+}
+
 .main {
   margin-top: 2rem;
   margin-bottom: 2rem;
